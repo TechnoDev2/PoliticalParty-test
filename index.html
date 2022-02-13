@@ -72,13 +72,13 @@
                                             <li class="rd-nav-item"><a class="rd-nav-link"
                                                     href="contact-us.html">Contact Us</a>
                                             </li>
-                                            <select class="rd-nav-item rd-nav-link" id="language" onchange="doGTranslate(this);changeLanguage();">
+                                            <!-- <select class="rd-nav-item rd-nav-link" id="language" onchange="doGTranslate(this);changeLanguage();">
                                                 <option value="">Select Language</option>
                                                 <option value="en|en">English</option>
                                                 <option value="en|hi">Hindi</option>
                                                 <option value="en|te">Telugu</option>
                                             </select>
-                                            <div id="google_translate_element2"></div>
+                                            <div id="google_translate_element2"></div> -->
                                         </ul>
                                     </div>
 
@@ -117,10 +117,9 @@
                                         class="wow slideInDown" data-wow-delay=".2s">Election Day Is <span
                                             class="underline-3 style-3 orange">Coming</span></span>
                                 </h1>
+                                
                                 <p class="big wow-outer text-sm md:text-base " style="min-height: 50px;">
-                                    <span class="wow slideInDown" id="typewriterEn" data-wow-delay=".35s"> </span>
-                                    <span class="wow slideInDown" id="typewriterTe" data-wow-delay=".35s"> </span>
-                                    <span class="wow slideInDown" id="typewriterHi" data-wow-delay=".35s"> </span>
+                                    <span class="wow slideInDown" id="typewriter" data-wow-delay=".35s"> </span>
                                 </p>
                                 <div class="wow-outer button-outer"><a
                                         class="button button-lg button-primary button-winona wow slideInDown"
@@ -522,7 +521,19 @@
                 </div>
             </div>
         </section>
-
+        <nav class="lang">
+            <ul>
+                <li class="lang-item">
+                    <a href="index.html" class="lang-link pl-4 text-gray-500">ENG</a>
+                </li>
+                <li class="lang-item">
+                    <a href="index-tel.html" class="lang-link">తెలుగు</a>
+                </li>
+                <li class="lang-item">
+                    <a href="index-hin.html" class="lang-link pl-3">हिन्दी</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- Page Footer-->
         <footer class="section footer-linked bg-secondary-dark">
@@ -711,62 +722,18 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <script>
-
-        function changeLanguage() {
-
-            var lan = document.getElementById('language').value;
-           if(lan==="en|hi"){
-               document.getElementById('typewriterEn').style.display="none";
-               document.getElementById('typewriterTe').style.display="none";
-               document.getElementById('typewriterHi').style.display="block";
-
-           }
-           else if(lan==="en|te"){
-               document.getElementById('typewriterEn').style.display="none";
-               document.getElementById('typewriterHi').style.display="none";
-               document.getElementById('typewriterTe').style.display="block";
-
-           }
-           else{
-               document.getElementById('typewriterTe').style.display="none";
-               document.getElementById('typewriterHi').style.display="none";
-               document.getElementById('typewriterEn').style.display="block";
-           }
-        }
-
-        changeLanguage();
-        new Typewriter('#typewriterEn', {
+        new Typewriter('#typewriter', {
             strings: [
-                'All the people in the community are my family members!',
-                'In a democracy, the people are the masters!',
-                'In a democracy, all people are VVIPs!',
-                'People believe that a democratic government exists only when the rulers provide the people with protection, knowledge, justice, peace, prosperity and a future.',
-                'Get it! After that, it is the people who apply for the establishment of a new society.'
-            ],
-            autoStart: true,
-            loop: 4,
-            pauseFor: 1500
-        });
-        new Typewriter('#typewriterTe', {
-            strings: [
-                'జీవితం అంటే నిన్ను నువ్వు చూసుకోవటం కాదు, నిన్ను నువ్వు రూపు దిద్దుకోవటం.',
-                'జీవితం అంటే నిన్ను నువ్వు చూసుకోవటం కాదు, నిన్ను నువ్వు రూపు దిద్దుకోవటం.',
-                'జీవితం అంటే నిన్ను నువ్వు చూసుకోవటం కాదు, నిన్ను నువ్వు రూపు దిద్దుకోవటం.',
-            ],
-            autoStart: true,
-            loop: 4,
-            pauseFor: 1500
-        });
-        new Typewriter('#typewriterHi', {
-            strings: [
-                'हिंदी को तुरंत शिक्षा का माध्यम बनाइये।',
-               'हिंदी को तुरंत शिक्षा का माध्यम बनाइये।',
-                 'हिंदी को तुरंत शिक्षा का माध्यम बनाइये।',
-               ],
-            autoStart: true,
-            loop: 4,
-            pauseFor: 1500
-        });
+                    'All the people in the community are my family members!',
+                    'In a democracy, the people are the masters!',
+                    'In a democracy, all people are VVIPs!',
+                    'People believe that a democratic government exists only when the rulers provide the people with protection, knowledge, justice, peace, prosperity and a future.',
+                    'Get it! After that, it is the people who apply for the establishment of a new society.'
+                ],
+                autoStart: true,
+                loop: 4,
+                pauseFor: 1500
+            });
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>

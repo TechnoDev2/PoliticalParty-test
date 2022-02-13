@@ -18942,3 +18942,26 @@ disabled look for disabled choices in the results dropdown
 .theme-switcher-group-item[data-theme-name='style-5'] {
     background: #c02921;
 }
+
+.lang {
+    --lang-gap: 15px;
+    padding: var(--lang-gap);
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 9999;
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+
+.lang-item {
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.lang-link {
+    cursor: pointer;
+    color: black;
+    transform: rotate(90deg);
+}
