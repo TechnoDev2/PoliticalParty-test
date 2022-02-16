@@ -155,6 +155,7 @@ body {
     font-weight: 300;
     color: #74757f;
     background-color: #fff;
+    overflow-y: scroll;
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: subpixel-antialiased;
     letter-spacing: .03em;
@@ -165,6 +166,15 @@ body {
         font-size: 16px;
         line-height: 1.5;
     }
+}
+
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+.body {
+    -ms-overflow-style:none;
+    scrollbar-width: none;
 }
 
 h1,
@@ -18944,24 +18954,53 @@ disabled look for disabled choices in the results dropdown
 }
 
 .lang {
-    --lang-gap: 15px;
-    padding: var(--lang-gap);
     position: fixed;
-    right: 0;
-    top: 30%;
+    right: 0%;
+    top: 20%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
     z-index: 9999;
-    font-weight: bold;
-    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .lang-item {
-    align-items: center;
-    display: flex;
-    margin-bottom: 40px;
+    padding: 5px;
+    border-radius: 10px 0px 0px 10px;
+    margin: 2px 0px 2px 0px;
+    background-color: whitesmoke;
+    transform: translate(62px, 0px);
+}
+
+.lang-item:hover{
+    transform: translate(0px, 0px);
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .lang-link {
     cursor: pointer;
     color: black;
-    transform: rotate(90deg);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.lang-link span {
+    background-color: black;
+    color:white;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.lang-item:hover > .lang-link span{
+    background-color: whitesmoke;
+    color:#000000;
+}
+
+.lang-item:hover > .lang-link{
+    color: black;
 }
