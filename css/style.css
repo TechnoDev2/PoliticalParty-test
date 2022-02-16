@@ -9372,6 +9372,10 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .preloader-logo {
+    /* flex flex-col items-center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     z-index: 10;
     transform: translate3d(0, -70%, 0);
@@ -18965,22 +18969,25 @@ disabled look for disabled choices in the results dropdown
 }
 
 .lang-item {
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px 0px 0px 10px;
-    margin: 2px 0px 2px 0px;
-    background-color: whitesmoke;
-    transform: translate(62px, 0px);
+    margin: 10px 0px 10px 0px;
+    background-color: #f97316;
+    transform: translate(52px, 0px);
+    transition-timing-function: ease-in-out;
+    transition: 0.5s;
 }
 
 .lang-item:hover{
     transform: translate(0px, 0px);
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  
 }
 
 .lang-link {
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
@@ -18990,17 +18997,18 @@ disabled look for disabled choices in the results dropdown
 }
 
 .lang-link span {
-    background-color: black;
+    /* background-color: black; */
     color:white;
-    padding: 1px;
+    padding-right: 16px;
     border-radius: 5px;
 }
 
 .lang-item:hover > .lang-link span{
-    background-color: whitesmoke;
-    color:#000000;
+    background-color: #f97316;
+    padding-right: 0px;
+    color:white;
 }
 
 .lang-item:hover > .lang-link{
-    color: black;
+    color: white;
 }
