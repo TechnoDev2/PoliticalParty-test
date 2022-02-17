@@ -23,6 +23,10 @@ blockquote {
     margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input,
 button,
 select,
@@ -857,6 +861,7 @@ a[href*='mailto'] {
 
 .box-light-title {
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 *+.box-light-title {
@@ -7168,6 +7173,12 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
 
 *+.career-classic-list {
     margin-top: 15px;
+}
+
+.career-classic-title{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #000000;
 }
 
 @media (max-width: 575.98px) {
