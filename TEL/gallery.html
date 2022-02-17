@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>Gallery</title>
+    <title>గ్యాలరీ</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,33 +34,41 @@
                                 <!-- RD Navbar Toggle-->
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
                                 <!-- RD Navbar Brand-->
-                                <a class="rd-navbar-brand" href="index.html"> <img src="../images/5_ccexpress.png" alt="" /><span style="font-size: 18px; font-weight: 600; padding-left: 10px;">People Protection Party</span></a>
+                                <a class="rd-navbar-brand flex items-center" href="index.html"> <img
+                                    src="../images/5_ccexpress.png" alt="" /><span
+                                    class="text-xl pl-2 font-semibold text-orange-500">
+                                    పీపుల్ ప్రొటెక్షన్ పార్టీ</span></a>
+                        </div>
+                        <div class="rd-navbar-main-element">
+                            <div class="rd-navbar-nav-wrap">
+                                <!-- RD Navbar Nav-->
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item"><a class="rd-nav-link"
+                                            href="/index.html">హోమ్</a>
+                                    </li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">గురించి</a>
+                                        <!-- RD Navbar Dropdown-->
+                                        <ul class="rd-menu rd-navbar-dropdown">
+                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                    href="about-party.html">పార్టీ గురించి</a></li>
+                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                    href="about-founder.html">వ్యవస్థాపకుడు గురించి</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link"
+                                            href="gallery.html">గ్యాలరీ</a>
+                                    </li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link"
+                                            href="contact-us.html">మమ్మల్ని సంప్రదించండి</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="rd-navbar-main-element">
-                                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
-                                    <!-- RD Navbar Nav-->
-                                    <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">About</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-party.html">About Party</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-founder.html">About Founder</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="gallery.html">Gallery</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
                                 <!-- RD Navbar Search-->
                                 <div class="rd-navbar-search" id="rd-navbar-search-1">
                                     <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle="#rd-navbar-search-1"><span></span></button>
                                     <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live-1" method="GET">
                                         <div class="form-wrap">
-                                            <label class="form-label" for="rd-navbar-search-form-input-1">Search...</label>
+                                            <label class="form-label" for="rd-navbar-search-form-input-1">వెతకండి...</label>
                                             <input class="form-input rd-navbar-search-form-input" id="rd-navbar-search-form-input-1" type="text" name="s" autocomplete="off">
                                             <div class="rd-search-results-live" id="rd-search-results-live-1"></div>
                                         </div>
@@ -74,16 +82,16 @@
             </div>
         </header>
         <!-- Breadcrumbs -->
-        <section class="breadcrumbs-custom bg-image" style="background-image: url(images/breadcrumbs-image-1.jpg);">
+        <section class="breadcrumbs-custom bg-image" style="background-image: url(../images/breadcrumbs-image-1.jpg);">
             <div class="breadcrumbs-custom-inner">
                 <div class="container breadcrumbs-custom-container">
                     <div class="breadcrumbs-custom-main">
-                        <h6 class="breadcrumbs-custom-subtitle title-decorated">Gallery</h6>
-                        <h1 class="breadcrumbs-custom-title">Gallery</h1>
+                        <h6 class="breadcrumbs-custom-subtitle title-decorated">గ్యాలరీ</h6>
+                        <h1 class="breadcrumbs-custom-title">గ్యాలరీ</h1>
                     </div>
                     <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">Gallery</li>
+                        <li><a href="index.html">హోమ్</a></li>
+                        <li class="active">గ్యాలరీ</li>
                     </ul>
                 </div>
             </div>
@@ -94,9 +102,9 @@
                 <div class="isotope-filters isotope-filters-modern">
                     <button class="isotope-filters-toggle button button-sm button-primary" data-custom-toggle="#isotope-filters" data-custom-toggle-disable-on-blur="true">Filter<span class="caret"></span></button>
                     <ul class="isotope-filters-list" id="isotope-filters">
-                        <li><a class="active" data-isotope-filter="*" data-isotope-group="portfolio" href="#">All Types</a></li>
-                        <li><a data-isotope-filter="Type 1" data-isotope-group="portfolio" href="#">Events</a></li>
-                        <li><a data-isotope-filter="Type 2" data-isotope-group="portfolio" href="#">Meetings</a></li>
+                        <li><a class="active" data-isotope-filter="*" data-isotope-group="portfolio" href="#">అన్ని రకాలు</a></li>
+                        <li><a data-isotope-filter="Type 1" data-isotope-group="portfolio" href="#">ఈవెంట్స్</a></li>
+                        <li><a data-isotope-filter="Type 2" data-isotope-group="portfolio" href="#">సమావేశాలు</a></li>
                     </ul>
                 </div>
                 <div class="isotope isotope-condensed row hoverdir" data-isotope-layout="masonry" data-isotope-group="portfolio" data-lightgallery="group">
