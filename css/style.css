@@ -18981,8 +18981,6 @@ disabled look for disabled choices in the results dropdown
 .lang-item:hover{
     transform: translate(0px, 0px);
     transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  
 }
 
 .lang-link {
