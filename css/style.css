@@ -7339,7 +7339,7 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
 }
 
 .jumbotron-classic.parallax-container {
-    background-position: 60% center;
+    background-position: center;
 }
 
 .jumbotron-classic .parallax-content {
