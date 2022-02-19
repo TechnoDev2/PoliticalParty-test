@@ -9394,7 +9394,7 @@ html:not(.lt-ie10) .not-animated {
     z-index: 10;
     transform: translate3d(0, -70%, 0);
     padding: 40px;
-    top: 15%;
+    top: 20%;
 }
 
 .preloader-body {
