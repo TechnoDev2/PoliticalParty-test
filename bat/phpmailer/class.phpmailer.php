@@ -183,7 +183,7 @@ class PHPMailer
     public $PluginDir = '';
 
     /**
-     * The email address that a reading confirmation should be sent to.
+     * The email address that a reading confirmation must be sent to.
      * @type string
      */
     public $ConfirmReadingTo = '';
@@ -2222,7 +2222,7 @@ class PHPMailer
                     $mime[] = sprintf('Content-ID: <%s>%s', $cid, $this->LE);
                 }
 
-                // If a filename contains any of these chars, it should be quoted,
+                // If a filename contains any of these chars, it must be quoted,
                 // but not otherwise: RFC2183 & RFC2045 5.1
                 // Fixes a warning in IETF's msglint MIME checker
                 // Allow for bypassing the Content-Disposition header totally
