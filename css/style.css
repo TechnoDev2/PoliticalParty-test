@@ -6972,6 +6972,7 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
 
 .timeline-classic-item-image {
     width: 100%;
+    border-radius: 5px;
 }
 
 .timeline-classic-item-title {
@@ -13622,6 +13623,10 @@ button.swiper-pagination-bullet {
     }
 }
 
+.isotope-item{
+    padding: 10px;
+}
+
 [data-isotope-layout] {
     z-index: 0;
     display: block;
@@ -13671,7 +13676,7 @@ button.swiper-pagination-bullet {
 }
 
 .isotope.isotope-condensed [class*="col"] {
-    padding: 0;
+    padding: 10px;
     margin: 0 0 30px 0;
 }
 
@@ -19054,6 +19059,12 @@ disabled look for disabled choices in the results dropdown
 .career-classic-title .icon {
     font-size: 25px;
     font-weight: 700;
+}
+
+
+
+img{
+    border-radius: 10px;
 }
 
 
